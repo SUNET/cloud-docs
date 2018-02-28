@@ -5,8 +5,9 @@
 Introduction to BaaS
 ====================
 
-The general documentation for BaaS is hosted on SafeSprings web, see
-https://docs.safespring.com/backup/getting-started/
+The general documentation for BaaS is hosted on SafeSprings web
+
+See https://docs.safespring.com/backup/getting-started/
 
 Installation
 ============
@@ -239,6 +240,7 @@ Disaster recovery, how to retreive the encryption passphrase
 
 The GPG-keys for unencrypting the passphrase are stored on two Yubikey 4K.
 ![BaaS Yubikey 4K recovery keys](BaaS-Yubikeys-4K.png)
+
 You can request one of them from the Security Officer if you need to recover
 the passphrase needed for restoring files.
 
