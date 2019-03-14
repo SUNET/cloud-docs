@@ -22,9 +22,9 @@ probably change in a near future...
 Add the new BaaS apt test repo
 
 ```
-# echo "deb https://repo.cloud.ipnett.com/debtest `lsb_release -cs` latest" \
+# echo "deb https://repo.cloud.ipnett.com/debian `lsb_release -cs` latest" \
 	| tee /etc/apt/sources.list.d/cloud.ipnett.list
-deb https://repo.cloud.ipnett.com/debtest stretch latest
+deb https://repo.cloud.ipnett.com/debian stretch latest
 ```
 
 (Where `lsb_release -cs` typically is the OS release name, eg. xenial etc.)
@@ -32,7 +32,7 @@ deb https://repo.cloud.ipnett.com/debtest stretch latest
 Add the GPG-key for the apt repo
 
 ```
-# curl -o cloud.ipnett.gpg https://repo.cloud.ipnett.com/debtest/pubkey.gpg
+# curl -o cloud.ipnett.gpg https://repo.cloud.ipnett.com/debian/pubkey.gpg
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1695  100  1695    0     0   7957      0 --:--:-- --:--:-- --:--:--  7995
@@ -43,8 +43,8 @@ Ign:1 http://deb.debian.org/debian stretch InRelease
 Hit:2 http://deb.debian.org/debian stretch-updates InRelease
 Hit:3 http://deb.debian.org/debian stretch Release
 Hit:5 http://security.debian.org stretch/updates InRelease
-Ign:6 https://repo.cloud.ipnett.com/debtest stretch InRelease
-Hit:7 https://repo.cloud.ipnett.com/debtest stretch Release
+Ign:6 https://repo.cloud.ipnett.com/debian stretch InRelease
+Hit:7 https://repo.cloud.ipnett.com/debian stretch Release
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
